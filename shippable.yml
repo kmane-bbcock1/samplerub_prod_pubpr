@@ -15,6 +15,11 @@ rvm:
   - jruby-1.7.19
   - jruby-9.0.0
   - ree
+  
+env:
+  global:
+    - APP_NAME=ruby-betanprod-withouttoolbelt
+    - CI_REPORTS=shippable/testresults COVERAGE_REPORTS=shippable/codecoverage
 
 services:
   - mysql
@@ -34,3 +39,6 @@ build:
     
   ci:
     - ruby -v
+  
+  on_success: 
+    - git push -f git@heroku.com:$APP_NAME.git master
