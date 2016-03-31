@@ -1,8 +1,13 @@
 language: ruby
 
 env: 
-  - TEST=FOO
-  - RETEST=BOO
+  global:
+    - TEST=FOO
+    - RETEST=BOO
+    
+  matrix: 
+    - a1=ONE
+    - a2=TWO
   
 # Version number
 rvm:
