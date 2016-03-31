@@ -1,2 +1,2 @@
-# sampleRub
+# sampleRuby
 test sample for Ruby
