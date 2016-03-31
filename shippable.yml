@@ -1,21 +1,14 @@
 language: ruby
 
 # Version number
-rvm:
-  - 1.8.7
-  - 1.9.2
-  - 1.9.3
-  - 2.0.0
-  - 2.1.2
-  - 2.1.3
-  - 2.1.4
-  - 2.1.5
+rvm:  
   - 2.2.0
-  - 2.2.1
-  - jruby-1.7.19
-  - jruby-9.0.0
+  - 2.2.1  
 #  - ree
 
+env:
+  - secure: ANLRY7mXtjN7N7mkB8ARIotaUDyxousfO3+mmYyoC7AnNmLI+OJcksY1j4+jR853SY3ItFxeIYZeRttcscGxbcyU2G4EqaZ4emGLeMyCtBWjkTCegurYesSWqBHW0I+AhEp2cfO7IFN8kQ97KbfW0bw+xGMf6Zsf7b3yCrAMgEXeBJONB66S4C0EPFFv5wX90j7Fjl8Xc/UKJ74hf3iAM+3ymM0Ebwdct/G4lhk18m3oBpL03Bq9JYhY3qfesWKFTbfaNTdAZ443JYHLvhXX+O41iPr1Gac+XvXNyHcGimfs21simHFpkRgoF60hT/mrfLVrBqpRC8UcLpt5a+te+Q==
+  // TEST=FOO prod-shiphitchcock1
 build:
   ci:
     - ruby -v
